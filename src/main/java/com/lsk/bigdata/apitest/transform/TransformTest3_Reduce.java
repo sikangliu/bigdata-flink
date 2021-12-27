@@ -38,6 +38,7 @@ public class TransformTest3_Reduce {
                     }
                 });
 
+        //lambda实现
         keyedStream.reduce((curState, newData) -> new SensorReading(curState.getId(), newData.getTimestamp(),
                 Math.max(curState.getTemperature(), newData.getTemperature())));
 

@@ -18,12 +18,7 @@ public class TransformTest1_Base {
                 env.readTextFile("D:\\workspace\\bigdata-flink\\src\\main\\resources\\sensor.txt");
 
         // 1. map，把String转换成长度输出
-        DataStream<Integer> mapStream = inputStream.map(new MapFunction<String, Integer>() {
-            @Override
-            public Integer map(String value) throws Exception {
-                return value.length();
-            }
-        });
+        DataStream<Integer> mapStream = inputStream.map((MapFunction<String, Integer>) value -> value.length());
 
         // 2. flatmap，按逗号分字段
         DataStream<String> flatMapStream = inputStream.flatMap(new FlatMapFunction<String, String>() {
