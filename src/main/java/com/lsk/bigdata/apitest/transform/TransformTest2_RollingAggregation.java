@@ -46,3 +46,24 @@ public class TransformTest2_RollingAggregation {
         env.execute();
     }
 }
+/*
+key2:3> 1
+key2:3> 34
+key2:3> 38
+key2:3> 658
+key2:3> 681
+key1:3> SensorReading{id='sensor_1', timestamp=1547718207, temperature=36.3}
+key1:3> SensorReading{id='sensor_1', timestamp=1547718209, temperature=32.8}
+result:3> SensorReading{id='sensor_1', timestamp=1547718212, temperature=37.1}
+result:3> SensorReading{id='sensor_1', timestamp=1547718212, temperature=37.1}
+result:3> SensorReading{id='sensor_1', timestamp=1547718212, temperature=37.1}
+result:3> SensorReading{id='sensor_1', timestamp=1547718212, temperature=37.1}
+result:3> SensorReading{id='sensor_6', timestamp=1547718201, temperature=15.4}
+key1:4> SensorReading{id='sensor_7', timestamp=1547718202, temperature=6.7}
+result:2> SensorReading{id='sensor_10', timestamp=1547718205, temperature=38.1}
+result:4> SensorReading{id='sensor_7', timestamp=1547718202, temperature=6.7}
+key1:2> SensorReading{id='sensor_10', timestamp=1547718205, temperature=38.1}
+key1:3> SensorReading{id='sensor_1', timestamp=1547718212, temperature=37.1}
+key1:3> SensorReading{id='sensor_1', timestamp=1547718199, temperature=35.8}
+key1:3> SensorReading{id='sensor_6', timestamp=1547718201, temperature=15.4}
+*/

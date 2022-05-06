@@ -39,3 +39,16 @@ public class BatchWordCount {
         }
     }
 }
+/*
+    (scala,1)
+    (you,3)
+    (flink,1)
+    (world,1)
+    (hello,4)
+    (and,1)
+    (are,1)
+    (thank,1)
+    (fine,1)
+    (how,1)
+    (spark,1)
+*/

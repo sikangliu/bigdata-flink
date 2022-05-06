@@ -47,3 +47,38 @@ public class TransformTest1_Base {
         env.execute();
     }
 }
+/*
+map> 24
+flatMap> sensor_1
+flatMap> 1547718199
+flatMap> 35.8
+filter> sensor_1,1547718199,35.8
+map> 24
+flatMap> sensor_6
+flatMap> 1547718201
+flatMap> 15.4
+map> 23
+flatMap> sensor_7
+flatMap> 1547718202
+flatMap> 6.7
+map> 25
+flatMap> sensor_10
+flatMap> 1547718205
+flatMap> 38.1
+filter> sensor_10,1547718205,38.1
+map> 24
+flatMap> sensor_1
+flatMap> 1547718207
+flatMap> 36.3
+filter> sensor_1,1547718207,36.3
+map> 24
+flatMap> sensor_1
+flatMap> 1547718209
+flatMap> 32.8
+filter> sensor_1,1547718209,32.8
+map> 24
+flatMap> sensor_1
+flatMap> 1547718212
+flatMap> 37.1
+filter> sensor_1,1547718212,37.1
+*/

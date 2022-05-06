@@ -31,3 +31,14 @@ public class SourceTest1_Collection {
         env.execute();
     }
 }
+/*
+int> 1
+int> 2
+data> SensorReading{id='sensor_1', timestamp=1547718199, temperature=35.8}
+int> 4
+data> SensorReading{id='sensor_6', timestamp=1547718201, temperature=15.4}
+int> 67
+data> SensorReading{id='sensor_7', timestamp=1547718202, temperature=6.7}
+int> 189
+data> SensorReading{id='sensor_10', timestamp=1547718205, temperature=38.1}
+*/
